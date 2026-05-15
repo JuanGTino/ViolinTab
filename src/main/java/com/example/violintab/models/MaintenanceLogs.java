@@ -1,4 +1,4 @@
-package com.example.ViolinTab.models;
+package com.example.violintab.models;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;

@@ -1,4 +1,4 @@
-package com.example.ViolinTab.models;
+package com.example.violintab.models;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
@@ -34,3 +34,4 @@ public class PracticeSessions {
     @Column(name = "max_bpm", nullable = false)
     private Integer maxBpm;
 }
+//aaaaaaaaaaaaa
