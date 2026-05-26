@@ -5,6 +5,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
+import org.hibernate.sql.Update;
 
 @Data
 @Entity
@@ -35,13 +36,15 @@ public class SheetMusic {
     private String pdfPath;
 
     public enum Status {
-        PUBLISHED,
-        DRAFT
+        por_aprender,
+        en_proceso,
+        dominado,
+        eliminado
     }
 
     @NotNull(message = "Status is mandatory")
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
+    @Column(nullable = true)
     private Status status;
 
     @Column(name = "favorite", columnDefinition = "BOOLEAN DEFAULT FALSE")
