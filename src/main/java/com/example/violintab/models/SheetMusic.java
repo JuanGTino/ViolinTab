@@ -20,9 +20,9 @@ public class SheetMusic {
     @Column(nullable = false)
     private String title;
 
-    @NotBlank(message = "Artist is mandatory")
+    @NotBlank(message = "Composer is mandatory")
     @Column(nullable = false)
-    private String artist;
+    private String composer;
 
     @NotBlank(message = "Category is mandatory")
     @Column(nullable = false)
@@ -30,7 +30,7 @@ public class SheetMusic {
 
     @NotBlank(message = "Genre is mandatory")
     @Column(nullable = false)
-    private String genre;
+    private String gender;
     @Column(name = "pdf_path")
     private String pdfPath;
 
@@ -44,7 +44,7 @@ public class SheetMusic {
     @Column(nullable = false)
     private Status status;
 
-    @Column(name = "is_favorite", columnDefinition = "BOOLEAN DEFAULT FALSE")
+    @Column(name = "favorite", columnDefinition = "BOOLEAN DEFAULT FALSE")
     private boolean favorite;
 
 }
