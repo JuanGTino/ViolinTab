@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="engl" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="comun">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViolinTab</title>
+
+    <link rel="stylesheet" th:href="@{/css/output.css}">
+
+    <link rel="manifest" th:href="@{/manifest.json}">
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/js/service-worker.js');
+            });
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
