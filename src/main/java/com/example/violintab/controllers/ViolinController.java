@@ -13,9 +13,9 @@ public class ViolinController {
         this.sheetMusicService = sheetMusicService;
     }
 
-     @GetMapping("/songs")
-    public String showSongs(Model model) {
-         model.addAttribute("songs", sheetMusicService.getAllSongs());
-         return "songs"; // Asegúrate de tener un archivo songs.html en src/main
-     }
+//     @GetMapping("/songs")
+//    public String showSongs(Model model) {
+//         model.addAttribute("songs", sheetMusicService.getAllSongs());
+//         return "songs"; // Asegúrate de tener un archivo songs.html en src/main
+//     }
 }

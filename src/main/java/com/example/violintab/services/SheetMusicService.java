@@ -17,11 +17,11 @@ public class SheetMusicService {
         this.sheetMusicRepository = sheetMusicRepository;
     }
 
-    public List<SheetMusic> getAllSongs() {
-        return sheetMusicRepository.findAll().stream()
-                .filter(s -> s.getStatus() != SheetMusic.Status.eliminado)
-                .collect(Collectors.toList());
-    }
+//    public List<SheetMusic> getAllSongs() {
+//        return sheetMusicRepository.findAll().stream()
+//                .filter(s -> s.getStatus() != SheetMusic.Status.eliminado)
+//                .collect(Collectors.toList());
+//    }
 
 
     //POST

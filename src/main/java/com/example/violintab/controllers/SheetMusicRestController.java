@@ -17,10 +17,10 @@ public class SheetMusicRestController {
     }
 
     // GET http://localhost:8080/api/partituras
-    @GetMapping
-    public List<SheetMusic> obtenerTodas() {
-        return service.getAllSongs();
-    }
+//    @GetMapping
+//    public List<SheetMusic> obtenerTodas() {
+//        return service.getAllSongs();
+//    }
 
     //POST
     // http://localhost:8080/api/partituras
